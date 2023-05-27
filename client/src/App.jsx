@@ -13,8 +13,13 @@ const App = () => {
         <Link to="/">
           <img src={logo} alt="logo" className="w-28 object-contain white" />
         </Link>
-        <Link to="/create-post" className="font-inter font-medium bg-gradient-to-r from-[#6449ff] via-[#9eb8f6] to-[#44cce7] background-animate text-white px-4 py-2 rounded-md">
-          Create
+        <Link to="/create-post" className="relative items-center justify-center p-4 px-5 py-3 overflow-hidden font-inter font-medium text-indigo-600 rounded-md shadow-2xl group">
+          <span class="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
+          <span class="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">
+          <span class="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
+          <span class="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
+          </span>
+          <span class="relative text-white">Create</span>
         </Link>
       </header>
 
