@@ -32,7 +32,7 @@ const CreatePost = () => {
   }
 
   return (
-    <section className="max-w-7x1 mx-auto">
+    <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold bg-clip-text text-transparent text-[32px] bg-gradient-to-r from-indigo-500 from-1% via-purple-500 via-20% to-pink-500 to-100% background-animate">
           Create The Imagination

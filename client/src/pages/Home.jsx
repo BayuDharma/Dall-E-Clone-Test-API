@@ -20,7 +20,7 @@ const Home = () => {
   const [searchText, setSearchText] = useState('')
 
   return (
-    <section className="max-w-7x1 mx-auto">
+    <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 background-animate text-[32px]">
           The Imagination Collection
