@@ -24,7 +24,7 @@ const CreatePost = () => {
   }
   
   const handleChange = (e) => {
-
+    form
   }
 
   const handleSurpriseMe = () => {
@@ -34,7 +34,7 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold bg-clip-text text-transparent text-[32px] bg-gradient-to-r from-indigo-500 from-1% via-purple-500 via-20% to-pink-500 to-100% background-animate">
+        <h1 className="font-extrabold bg-clip-text text-transparent text-[32px] bg-gradient-to-r from-violet-500 from-1% via-purple-500 via-20% to-pink-500 to-100% background-animate">
           Create The Imagination
         </h1>
         <p className="mt-2 max-w-[600px] text-[#666e75] text-[14px]">
@@ -65,7 +65,7 @@ const CreatePost = () => {
           />
 
           <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-          focus:ring-indigo-500 focus:border-indigo-500 
+          focus:ring-violet-500 focus:border-violet-500 
           w-64 p-3 h-64 flex justify-center items-center">
             {form.photo ? (
               <img 
@@ -88,13 +88,13 @@ const CreatePost = () => {
 
           <div className="mt-2 flex gap-5">
               <button type="button" onClick={generateImage} className="text-white bg-green-600 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center">
-                {generatingImg ? 'Making Ur Imagination' : 'Generate'}
+                {generatingImg ? 'Making Ur Imagination...' : 'Generate'}
               </button>
           </div>
 
-          <div className="mt-5">
+          <div>
                  <p className="mt-2 text-[#666e75] text-[14px]"> Once you created the image with your imagination,you can share it to the universe</p>
-                 <button type="submit" className="mt-3 text-white bg-indigo-500 font-medium rounded-md text-sm w-full sm:auto px-5 py-2.5 text-center">
+                 <button type="submit" className="mt-3 text-white bg-violet-500 font-medium rounded-md text-sm w-full sm:auto px-5 py-2.5 text-center">
                   {loading ? 'Sharing...' : 'Share To The Universe'}
                  </button>
           </div>

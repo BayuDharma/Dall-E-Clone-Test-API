@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 background-animate text-[32px]">
+        <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r  from-violet-500 via-purple-500 to-pink-500 background-animate text-[32px]">
           The Imagination Collection
         </h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[600px]">
