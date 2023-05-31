@@ -24,11 +24,12 @@ const CreatePost = () => {
   }
   
   const handleChange = (e) => {
-    form
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
-
+  
   const handleSurpriseMe = () => {
-
+    const randomPrompt = getRandomPrompt(form.prompt);
+    setForm({ ...form, prompt: randomPrompt })
   }
 
   return (
@@ -61,7 +62,7 @@ const CreatePost = () => {
           value={form.prompt}
           handleChange={handleChange}
           isSurpriseMe
-          handeSurpriseMe={handleSurpriseMe}
+          handleSurpriseMe={handleSurpriseMe}
           />
 
           <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
@@ -93,10 +94,10 @@ const CreatePost = () => {
           </div>
 
           <div>
-                 <p className="mt-2 text-[#666e75] text-[14px]"> Once you created the image with your imagination,you can share it to the universe</p>
-                 <button type="submit" className="mt-3 text-white bg-violet-500 font-medium rounded-md text-sm w-full sm:auto px-5 py-2.5 text-center">
-                  {loading ? 'Sharing...' : 'Share To The Universe'}
-                 </button>
+            <p className="mt-2 text-[#666e75] text-[14px]"> Once you created the image with your imagination,you can share it to the universe</p>
+            <button type="submit" className="mt-3 text-white bg-violet-500 font-medium rounded-md text-sm w-full sm:auto px-5 py-2.5 text-center">
+              {loading ? 'Sharing...' : 'Share To The Universe'}
+            </button>
           </div>
 
         </div>
@@ -105,4 +106,4 @@ const CreatePost = () => {
   )
 }
 
-export default CreatePost
+export default CreatePost;

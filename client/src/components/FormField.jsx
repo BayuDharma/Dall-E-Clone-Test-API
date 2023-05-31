@@ -18,6 +18,7 @@ const FormField = ({ LabelName, type, name, placeholder, value, handleChange, is
         name={name}
         placeholder={placeholder}
         value={value}
+        onChange={handleChange}
         required
         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
         focus:ring-indigo-500 focus:border-indigo-500 outline-none block w-full py-2 px-2"
@@ -27,4 +28,4 @@ const FormField = ({ LabelName, type, name, placeholder, value, handleChange, is
   )
 }
 
-export default FormField
+export default FormField;
